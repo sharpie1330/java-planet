@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Parent_contents_5">
+
+    <LinearLayout
+        android:id="@+id/title_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_parent_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="추상 클래스" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/slide_5"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_below="@+id/title_5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/slide_parent__37_" />
+
+    <LinearLayout
+        android:id="@+id/btn_linear_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slide_5">
+
+        <Button
+            android:id="@+id/before_btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="16dp"
+            android:text="이전"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/page_text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center|center_horizontal"
+            android:textSize="20dp"
+            android:text="1/9"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/next_btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:text="다음" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_5"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/btn_linear_5"
+        android:background="@drawable/scroll_textview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="어떤 클래스가 하나라도 추상 메소드를 포함하고 있다면 그 클래스는 반드시 키워드  abstract로 선언되어야 하며, 이러한 클래스를 추상 클래스라고 한다.\n\n그리고 추상 클래스는 추상 메소드를 포함하든 하지 않든 키워드 abstract를 사용하여 선언된 클래스이다. 추상 클래스는 인스턴스화 될 수는 없으나 상속될 수는 있다.\n\n어떤 추상 클래스가 상속되는 경우, 그 서브클래스는 보통 자기의 부모인 추상클래스에 있는 모든 추상 메소드들에 대한 구현을 제공한다. 그러나, 그렇게 하지 않을 경우, 그 서브클래스 또한 abstract로 선언되어야 한다." />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/link_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_5"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/link_btn_p5_1"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_red" />
+
+        <ImageButton
+            android:id="@+id/link_btn_p5_2"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_green" />
+
+        <ImageButton
+            android:id="@+id/link_btn_p5_3"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_yellow" />
+    </LinearLayout>
+
+
+</RelativeLayout>

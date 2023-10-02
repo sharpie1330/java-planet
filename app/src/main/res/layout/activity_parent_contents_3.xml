@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Parent_contents_3">
+
+    <LinearLayout
+        android:id="@+id/title_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_parent_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="키워드 super" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/slide_3"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_below="@+id/title_3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/slide_parent__17_" />
+
+    <LinearLayout
+        android:id="@+id/btn_linear_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slide_3">
+
+        <Button
+            android:id="@+id/before_btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="16dp"
+            android:text="이전"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/page_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center|center_horizontal"
+            android:textSize="20dp"
+            android:text="1/8"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/next_btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:text="다음" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_3"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/btn_linear_3"
+        android:background="@drawable/scroll_textview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="자바는 2가지 용도로 키워드 super를 제공하고 있다.\n\n하나는 상속으로 인해 오버라이딩된 수퍼클래스의 메소드 혹은 필드를 액세스하고자 하는 경우와 다른 하나는 서브클래스의 생성자에서 수퍼클래스의 생성자를 호출하고자 하는 경우이다.\n\n어떤 메소드가 수퍼클래스의 메소드를 오버라이딩하고 있는 경우, 오버라이딩된 수퍼클래스 메소드를 호출하고 싶다면 super 키워드를 사용하면 된다. " />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/link_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_3"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/link_btn_p3_1"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_red" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

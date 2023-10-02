@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Parent_contents_4">
+
+    <LinearLayout
+        android:id="@+id/title_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_parent_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="타입 변환과 다형성" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/slide_4"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_below="@+id/title_4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/slide_parent__25_" />
+
+    <LinearLayout
+        android:id="@+id/btn_linear_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slide_4">
+
+        <Button
+            android:id="@+id/before_btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="16dp"
+            android:text="이전"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/page_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center|center_horizontal"
+            android:textSize="20dp"
+            android:text="1/12"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/next_btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:text="다음" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_4"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/btn_linear_4"
+        android:background="@drawable/scroll_textview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="타입 변환은, 상속 관계 혹은 구현 관계가 성립하는 개체 간에 있어서, 어떤 타입의 위치에 다른 타입의 객체를 사용하는 것에 대한 자바의 규칙이다. 이러한 타입 변환은 자바 특성 중의 하나인 다형성을 나타내도록 해준다.\n\n서브클래스 객체의 타입을 수퍼클래스 객체의 타입으로 변환하는 것을 자동 타입 변환이라고 한다.\n\n컴파일러에 의한 자동 타입 변환이 아닌 명시적으로 변환을 지정하는 경우는 강제 타입 변환이라고 한다.\n\n자바에서 다형성은 하나의 객체 타입(수퍼타입)이 여러 다른 타입(서브타입)의 객체를 참조할 수 있는 개념이다." />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/link_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_4"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/link_btn_p4_1"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_red" />
+
+        <ImageButton
+            android:id="@+id/link_btn_p4_2"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_green" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

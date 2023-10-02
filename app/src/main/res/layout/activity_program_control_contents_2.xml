@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Program_control_contents_2">
+
+    <LinearLayout
+        android:id="@+id/title_pc_lot_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_pc_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="메소드" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_pc_2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/title_pc_lot_2"
+        />
+    ​
+    <ScrollView
+        android:id="@+id/scroll_pc_2"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/webview_pc_2"
+        android:background="@drawable/scroll_textview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp">
+        ​
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pc_con2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="메소드\n\n
+ 보통 다른언어에는 함수라는 것이 별도로 존재한다.\n
+ 하지만 자바는 클래스를 떠나 존재하는 것은 있을 수 없기 때문에 자바의 함수는 따로 존재하지 않고 클래스 내에 존재한다. \n
+ 자바는 이 클래스 내의 함수를 메소드라고 부른다.\n
+ 1)메소드를 사용하는 이유?\n
+ 가끔 프로그래밍을 하다 보면 똑같은 내용을 자신이 반복해서 적고 있는 것을 발견할 때가 있다. \n
+ 이 때가 바로 메소드가 필요한 때이다. \n
+ 여러 번 반복해서 사용된다는 것은 언제고 또다시 사용할 만한 가치가 있는 부분이다.\n
+ 2)메소드의 입력값과 리턴값\n
+ 메소드는 들어온 입력값을 가지고 어떤 처리를 하여 적절한 리턴값을 돌려주는 블랙박스와 같다.\n
+ 3)메소드의 구조\n
+ public 리턴자료형 메소드명(입력자료형1 입력변수1, 입력자료형2 입력변수2, ...) {\n
+    ...    \n
+    return 리턴값;  // 리턴자료형이 void 인 경우에는 return 문이 필요없다.\n
+}\n
+ 리턴자료형은 메소드 수행 후 돌려줄 값의 자료형을 의미한다. 메소드의 리턴값은 return 이라는 명령을 사용한다.\n\n
+
+메소드는 입출력 유무에 따라 다음과 같이 4가지로 분류할 수 있다.\n
+-입력과 출력이 모두 있는 메소드\n
+-입력과 출력이 모두 없는 메소드\n
+-입력은 없고 출력은 있는 메소드\n
+-입력은 있고 출력은 없는 메소드 \n\n" />
+        </LinearLayout>
+    </ScrollView>
+    ​
+    <LinearLayout
+        android:id="@+id/link_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_pc_2"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/link_btn_2_1"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_yellow" />
+    </LinearLayout>
+
+</RelativeLayout>

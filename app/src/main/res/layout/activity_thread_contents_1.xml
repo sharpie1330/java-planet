@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Thread_contents_1">
+
+    <LinearLayout
+        android:id="@+id/title_thread_lot_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_thread_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="스레드와 프로세스의 차이" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_thread_1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/title_thread_lot_1"
+        />
+    ​
+    <ScrollView
+        android:id="@+id/scroll_thread_1"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/webview_thread_1"
+        android:background="@drawable/scroll_textview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp">
+        ​
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/th_con1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#스레드와 프로세스\n\n
+ 프로세스는 흔히 “실행 중인 프로그램(A program in execution)”이라고 한다.\n
+ 프로세스는 그 자체로써 실행을 위해서, 주 메모리 공간, 디스크 공간, 파일 등 필요한 모든 환경을 갖추고 있다.\n
+ 그러므로 프로세스는 상호 독립적이다. 그리고 필요한 경우 운영체제가 지원하는\n
+ ICP(Interprocess Communication) 기능을 통하여 서로 소통할 수 있다.\n
+ 스레드는 프로세스와 유사한 개념으로 둘 다 실행 환경을 의미하지만, 몇 가지 중요한 다른 점이 있다.\n
+ 스레드는 프로세스 내부에 존재하며, 프로세스의 리소스(환경)를 서로 공유하고 있다.\n
+ 러므로 효율적인 병행 수행이 가능하지만, 한편으로는 서로 의존적이므로 문제를 유발할 소지도 크다.\n\n" />
+        </LinearLayout>
+    </ScrollView>
+    ​
+
+
+    <LinearLayout
+        android:id="@+id/link_th_collection1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_thread_1"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/link_btn_th_1"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_green" />
+
+    </LinearLayout>
+
+</RelativeLayout>

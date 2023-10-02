@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Class_contents_3">
+
+    <LinearLayout
+        android:id="@+id/title_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_class_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="생성자와 인스턴스" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_class_3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/title_3"
+        />
+    ​
+    <ScrollView
+        android:id="@+id/scroll_3"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/webview_class_3"
+        android:background="@drawable/scroll_textview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp">
+        ​
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/c_con3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="생성자 (constructor)\n\n
+정의\n
+- 생성자(constructor)란 객체를 만드는 특별한 메소드이다.\n\n
+
+생성자의 역할\n
+- 객체를 생성한다.\n
+- 객체를 초기화한다. (객체의 필드 값을 설정한다.)\n\n인스턴스\n\n
+정의\n
+- 설계도를 바탕으로 소프트웨어 세계에서 구현된 구체적인 실체이다. \n(객체를 소프트웨어에서 실체화하면 그것이 인스턴스이다.)\n\n
+
+특징\n
+- 실체화된 인스턴스는 메모리에 할당된다.\n
+- 추상적인 개념과 구체적인 객체 사이의 관계에 초점을 맞출 경우에 사용한다.\n
+- ‘~의 인스턴스’의 형태로 사용한다.\n
+- 객체는 클래스의 인스턴스이다.\n
+- 객체 간의 링크는 클래스 간의 연관 관계의 인스턴스이다.\n
+- 실험 프로세스는 프로그램의 인스턴스이다." />
+        </LinearLayout>
+    </ScrollView>
+    ​
+    <LinearLayout
+        android:id="@+id/link_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_3"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/link_btn_3_1"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_yellow" />
+    </LinearLayout>
+</RelativeLayout>

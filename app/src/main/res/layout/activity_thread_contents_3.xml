@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Thread_contents_3">
+
+    <LinearLayout
+        android:id="@+id/title_thread_lot_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_thread_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="Thread 클래스 상속, Runnable 인터페이스" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_thread_3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/title_thread_lot_3"
+        />
+    ​
+    <ScrollView
+        android:id="@+id/scroll_thread_3"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/webview_thread_3"
+        android:background="@drawable/scroll_textview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp">
+        ​
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/th_con3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#Thread 클래스 상속, Runnable 인터페이스\n\n
+ (1)Thread 클래스 상속\n\n
+ 스레드 클래스를 상속받아 스레드 객체를 생성하는 과정은 자신의 스레드 작업을 위한 스레드 클래스를 작성하고,\n
+ 스레드 코드를 작성한 뒤 스레드 객체를 생성하여 스레드 스타트를 한다.\n\n
+ (2)Runnable 인터페이스\n\n
+ Runnable interface는 run() 하나만을 메소드로 가지고 있는 함수적 interface이다.\n
+ 스레드로 수행해야 할 작업을 메소드 run()에 구현한다.\n
+ 이때 메소드 run()은 자바의 스레드 스케쥴러에 의해 구동되는 일종의 callback method라고 할 수 있으며,\n
+ 항상 try-catch 문으로 구현하는 것이 좋다.\n
+ Runnable 인터페이스를 이용하는 방법은 Runnable 타스크와 Thrad 객체를 분리하여 운영하는 장점도 있다.\n
+ 그리고 좀 더 융통성 있으면서, 고급 스레드 관리를 위한 API를 적용하기도 쉽다.\n\n" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/link_th_collection3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_thread_3"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/link_btn_th4"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_green" />
+    </LinearLayout>
+
+</RelativeLayout>

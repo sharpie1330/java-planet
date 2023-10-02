@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">javaplanet</string>
+    <string name="codelearn">코드로 더 알아보기</string>
+    <string name="weblearn">링크로 더 알아보기</string>
+
+</resources>

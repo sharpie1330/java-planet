@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Program_control_contents_3">
+
+    <LinearLayout
+        android:id="@+id/title_pc_lot_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_pc_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="자료형" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_pc_3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/title_pc_lot_3"
+        />
+    ​
+    <ScrollView
+        android:id="@+id/scroll_pc_3"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/webview_pc_3"
+        android:background="@drawable/scroll_textview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp">
+        ​
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pc_con3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="자료형\n\n
+1) boolean : 해당 자료형은 논리값을 저장하게 된다. \n
+True(참)와 False(거짓)을 기억하며 Java에만 해당 자료형이 존재한다. \n
+C언어에서는 보통 define을 통해 TURE(1), FALSE(0)를 정의하여 주거나, stdbool.h 라는 헤더파일을 사용한다.\n\n
+
+2) char : 문자를 저장하는 자료형이다. \n
+C언어와 Java모두 하는 역할은 동일하지만 1 Byte 와 2 Bytes 라는 2배의 공간 차이가 나게된다. \n
+이러한 차이가 나게되는 이유는 C언어의 경우 ASCII 코드(127개의 영어,숫자,제어문자)를 채택하여 사용하고 있으며, \n
+Java의 경우 유니코드(약 65,000개의 문자)를 채택하여 사용하고 있기 때문이다.\n
+(참고로 한글의 경우 초성+중성+종성의 조합이기 때문에 1Byte(127개)로는 모든 글자를 표현할 수 없다.
+그렇기에 C언어로 한글을 입력받게 되면 글자가 깨진다.)\n\n
+
+3) byte : 정수형의 자료형으로, 자료형 이름을 보면 알수있듯이 1 Byte의 크기를 가진다.\n
+Java에만 존재하는 자료형으로, C언어에서의 char형과 같은 크기이므로 \n
+char를 통해 해당역할을 대신 할 수 있다.\n\n
+
+4) long : 정수형 자료형 중 가장큰 자료형으로 \n
+C언어는 4 Bytes , Java는 8 Byte의 크기를 가진다. \n
+C언어에서 Java와 같은 8 Bytes 의 크기의 정수형 공간을 사용하고 싶다면 long long 타입을 사용하면 된다.\n\n
+
+5) float 및 Double : 이 실수형 타입들에 경우 \n
+차지하는 저장공간은 4 Bytes 와 8 Bytes로 같은데 \n
+실제 표현가능한 범위를 계산해보면 서로 상이한 것을 알 수 있다. \n
+표현방식의 차이가 있다고 생각된다.\n\n" />
+        </LinearLayout>
+    </ScrollView>
+    ​
+    <LinearLayout
+        android:id="@+id/link_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/webview_pc_3"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/link_btn_2_1"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/link_yellow" />
+    </LinearLayout>
+</RelativeLayout>

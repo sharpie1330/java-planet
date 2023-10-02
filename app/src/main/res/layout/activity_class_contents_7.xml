@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:visibility="visible"
+    tools:context=".Class_contents_7">
+
+    <LinearLayout
+        android:id="@+id/title_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_class_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="프로그래밍 단계"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_class_7"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/title_7"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    ​
+
+    <ScrollView
+        android:id="@+id/scroll_7"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/webview_class_7"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/scroll_textview"
+        android:padding="20dp">
+        ​
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/c_con7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="프로그래밍 단계\n\n
+영희와 철수가 각자의 계산기로 사칙연산을 수행한다.\n\n
+1. 객체 찾기 및 객체 분류\n 영희, 철수, 영희 계산기, 철수 계산기가 객체라고 할 수 있고 영희와 철수는 사용자라는 부류, 영희 계산기와 철수 계산기는 계산기라는 동일한 부류에 속한다.\n 이 과정을 마치면 클래스를 인지할 수 있을 것이다.\n\n
+2. 클래스 인지 \n2개의 클래스가 존재하면 된다는 것을 알 수 있다. 영희와 철수가 속하는 User 클래스와 영희 계산기와 철수 계산기가 속하는 Calculator가 그것이다.\n\n
+3. 클래스 설계\n
+- User 클래스\n
+   (1) 클래스의 정적 속성을 설정한다.\n
+정적 속성으로 사용자 이름과 나이를 설정한다. \n이를 위해 String 타입과 정수 타입 두가지 필드로 정의한다.\n
+   (2) 클래스의 동적 속성을 설정한다. \n
+동적 속성으로는 이름 알기와 나이 알기 메소드를 정의한다.\n
+모든 클래스는 자신의 인스턴스를 생성하기 위해 클래스 이름과 동일한 이름을 가지는 생성자(constructor)라고 하는 특별한 메소드를 포함해야 한다.\n
+   (3) 마지막으로 “new + 생성자이름” 메시지를 통해 해당 생성자 메소드를 호출하면 클래스의 인스턴스가 생성된다.\n
+
+- Calculator\n
+1) 정적 속성\n
+계산기 소유자 이름과 연산 결과를 저장하는 필드를 설정한다. 이를 String 타입과 정수 타입 두가지 필드로 정의한다. \n
+2) 동적 속성\n
+Calculator 동작을 의미하며, 사칙연산 동작을 한다고 했으면 네 개의 동적 속성을 설정하여 그 결과를 반환하는 메소드를 정의해야 한다. 또, 누구의 계산기인지 알기 위해 이름 알기 메소드를 정의한다.\n
+3) 마지막으로 “new + 생성자이름” 메시지를 통해 해당 생성자 메소드를 호출하면 클래스의 인스턴스가 생성된다.\n\n
+
+4. 실행클래스와 인스턴스의 생성\n
+
+   - 누가 이러한 객체 생성을 주도할 것인가, 실행 클래스는 누가 되어야 하는가를 결정해야 한다. 이것이 정해지면 어느 클래스의 메인 메소드가 존재할지 결정되는 것이다. User 클래스에 메인 메소드가 정의되면 모든 동작의 주도는 User 클래스에서 일어나게 된다. Calculator 클래스는 API 클래스가 된다." />
+
+        </LinearLayout>
+
+    </ScrollView>
+    ​
+
+    ​
+</RelativeLayout>

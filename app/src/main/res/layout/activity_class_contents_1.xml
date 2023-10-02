@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Class_contents_1">
+
+    <LinearLayout
+        android:id="@+id/title_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_class_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="자바를 배우는 이유" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_class_1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/title_1"
+        />
+    ​
+    <ScrollView
+        android:id="@+id/scroll_1"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/webview_class_1"
+        android:background="@drawable/scroll_textview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp">
+        ​
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/c_con1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="자바는 이미 인기 있는 언어이고, 죽어가는 언어이며, \n첫 번째 프로그래밍 언어로 배우기에는 어렵다고 느껴질 수 있다. 하지만 자바는 TIOBE, PYP, GitHub’s Octoverse 등 글로벌 순위에 따르면 여전히 현재 가장 많이 사용되는 언어 중 하나로 자리 잡고 있다.
+\n자바는 수많은 라이브러리를 가진 유연한 교차 플랫폼의 언어로써 기업, 중소기업, 빅데이터, 과학적 발전, 모바일 프로그래밍, 게임 개발 그리고 거의 모든 다양한 과제에 대한 간결한 해결책을 작성하는 데 도움을 줄 수 있다. 자바는 지속적으로 새로운 기능을 업데이트하고 제공한다.\n
+간단히 말해 자바는 성숙하고 현대적인 프로그래밍 언어이다. 처음 시작하기 어려운 언어일 수도 있지만, 일단 마스터하고 나면 수요가 많을 것이다." />
+        </LinearLayout>
+    </ScrollView>
+    ​
+    ​
+</RelativeLayout>
