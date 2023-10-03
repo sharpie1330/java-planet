@@ -27,31 +27,30 @@ Java와 같은 프로그래밍 언어를 처음 접해 공부하는 사람들에
 **교재 학습 및 팀별 콘텐츠 제작**<br>
 애플리케이션 제작을 위하여 교재를 통해 Java, 안드로이드, 포토샵, 일러스트, GitHub 등의 학습을 진행한 후, Java 파트별로 팀을 나누어 제작을 진행하였다. 가장 먼저 팀별로 각 단원별 개념 정리를 위한 자료조사를 수행하였다. 그 다음으로, 수집한 자료를 토대로 각자 맡은 파트의 추상화 그래픽을 제작하였다. 추상화 그래픽 제작은 일러스트, 애프터 이펙트, 프리미어, PowerPoint, 포토샵 등을 활용하였다. 또한 팀별로 앱에 들어갈 코드 예제를 만들고 인터넷의 유용한 개념 정리 링크들을 모았다. 콘텐츠 제작을 마친 뒤, 안드로이드 스튜디오를 통해 개발을 진행하였다. 콘텐츠를 영상으로 만든 팀들은 영상을 유튜브에 게시하여 유튜브와 연동시켜주었다.<br><br>
 
-
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/b2202324-65f2-421a-94d7-e0dd26b067d6)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/40ae3dc1-1913-427c-9222-67edd01d1b71)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/9a67ab16-4b39-4922-b621-12d106e85a45)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/45cbde93-4d2d-4208-9074-ead2a08494fb)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/1d0fe32e-467a-4df7-8b8c-e03b0fb01f54)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/6a0deabf-8c52-4426-9aa5-482f182759f7)
 <br>
 *변수와 함수 & 프로그램 흐름 제어 (유선진)*
 <br><br>
 
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/3d9e82df-9b9b-467c-aba7-4839d8202c92)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/92e706a3-1661-4feb-a51b-30cb627ac9e8)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/6d58d61d-fb81-427b-aed3-46250f618197)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/17ec0d14-2f52-45f2-833a-22dd5d66bd23)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/c6ae32cc-67c5-4356-9a4b-713967b13964)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/c82f9f6d-b8e5-42b3-81c4-b099cc716a9c)
 <br>
 *클래스와 객체 (문유정, 최지선)*
 <br><br>
 
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/81b93208-05e6-4b2b-ade1-56f571ca1799)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/d1b067aa-c6e4-47f5-ba50-0eebfaa37a2c)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/1c9f0741-205d-441c-ab82-61a3f99f958c)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/bfdb2ada-f39a-4fa3-8b7b-b6f16edee098)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/35c50f09-cf1c-478c-9004-5c8183338ac6)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/91a0eec8-9081-4101-a73c-d2a836d9e50a)
 <br>
 *상속, 인터페이스 (곽태영, 이수연)*
 <br><br>
 
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/11c397c4-27fe-4d29-96b5-d5e8770d5231)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/ae33cf23-6329-4db8-b444-12886ad01a8a)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/7ba27b99-33bc-4487-9877-998d1d3580cc)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/24fc703f-60a1-44a3-8caf-eccae3657727)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/46a8d668-c6e3-499d-8c17-d64604b05640)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/2ce795d2-dfbc-457c-994d-bb06d5734808)
 <br>
 *스레드 (강예원)*
 <br><br>
@@ -64,22 +63,22 @@ Java와 같은 프로그래밍 언어를 처음 접해 공부하는 사람들에
 **UI 디자인**<br>
 Java를 학습하기 위해 행성을 탐험한다는 콘셉트로, "Java Planet"이라는 이름으로 결정했다. 태양계를 모티브로 해 단원별 메뉴 아이콘을 금성, 지구 등과 같은 태양계 행성으로 디자인하였고, 그런 행성들이 태양을 중심으로 궤도를 도는 것처럼 메인 메뉴 화면을 구성했다. 단원별 아이콘 버튼을 눌렀을 때 이동하는 세부 메뉴 화면은 채도감 있는 색상으로 행성과 동그란 버튼을 제작해 적용했고, 행성을 탐험하는 여정처럼 길에 버튼을 배치해 구성했다. 우주인 캐릭터도 제작하여 삽입했다. 마지막으로 세부 메뉴 화면에서 버튼을 누르면 이동하는 학습 화면은 유튜브 영상이나 이미지, 텍스트뷰와 외부 링크로 이동하는 버튼을 배치해 구성하였다. 다음은 최종적으로 완성한 어플리케이션의 화면이다.<br><br>
 
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/9bf62ab2-f1de-426c-bfa6-ec510d0ba511)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/49048898-f38c-41f8-9e77-29fbdaa26706)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/4c683fab-4c76-4659-bfec-b54c86e0a353)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/b0dd755a-9285-4e80-a789-c2078820a383)
 <br>*Java Planet 로딩 화면과 메인 메뉴 화면*<br><br>
 
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/2da80e2a-2108-4d29-88e5-124cd69d67bf)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/aa781c7c-95a7-4e15-ad0d-c395302af13e)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/34ffd728-4418-4662-ab98-d894aed3b2f0)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/c483e89f-01e6-4bce-9a94-1a17f30f8f6e)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/8ea1f122-53db-4075-a4db-b900c8ef86a8)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/9635efcf-e372-4b32-ac39-53c1c44dc220)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/1c7b7331-b8ce-4cbe-a3f7-6d1f9aaa65eb)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/6ad81e42-2078-438f-a556-1eca15cc0037)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/7b3a52d4-3c89-4a42-a8b6-45d07deab672)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/a1eb81f6-751b-4de4-9cb0-69d51b0acc2d)
 <br>*단원별 메뉴 화면*<br><br>
 
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/06a8f605-c4b5-4237-8c14-9ecd2b28e314)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/2e98f187-b62d-47bc-9b9a-96566add8760)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/44cbfb36-9a7e-435c-82e3-9c84cdca38d4)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/4c2299d2-7410-455d-ad29-3ac6ba375a4f)
-![image](https://github.com/sharpie1330/java-planet/assets/71365547/2e8dc1b6-db96-4e1d-8f3b-3f84a910da5f)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/c1ea15ef-f3f2-45c4-9a87-3eb0b35f83c5)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/8a3f8ecc-8aa5-4a1a-8ea1-da43b45e8896)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/0590cc5e-7ab1-4a31-a4af-42d1062ab472)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/0c9731d4-2c4e-49cd-9555-7ca9ea67b586)
+![image](https://github.com/sharpie1330/java-planet/assets/71365547/cfb27888-1baf-4f43-b602-b961008990fe)
 <br>*학습 메뉴 화면*<br><br>
 
 > 주요 성과 및 기대효과
